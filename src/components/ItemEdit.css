@@ -1,0 +1,37 @@
+.custom-label {
+    margin-bottom: 12px; /* Adjust spacing as needed */
+}
+.custom-input-padding {
+    --padding-top: 10px; /* Add more space between floating label and input text */
+}
+.pulse {
+    animation: pulseAnimation 1.2s infinite;
+}
+
+.pulse {
+    animation: pulseAnimation 1.2s infinite;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 255, 128, 0.7); /* green glow */
+        color: #00b050; /* darker green text */
+        text-shadow: 0 0 6px rgba(0, 255, 128, 0.8);
+    }
+    50% {
+        transform: scale(1.07);
+        box-shadow: 0 0 0 8px rgba(0, 255, 128, 0); /* fade glow */
+        color: #009940; /* slightly darker green */
+        text-shadow: 0 0 12px rgba(0, 255, 128, 1);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 255, 128, 0);
+        color: #00b050; /* back to darker green */
+        text-shadow: 0 0 6px rgba(0, 255, 128, 0.8);
+    }
+}
+
+
+
